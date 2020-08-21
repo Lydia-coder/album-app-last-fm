@@ -1,0 +1,77 @@
+.SearchAlbums {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  height: 30px;
+  width: 500px;
+}
+.SortBtn {
+  color: black;
+  height: 36px;
+  background-color: white;
+  margin-left: 5px;
+  border-radius: 3px;
+  font-family: "Indie Flower", cursive;
+}
+
+.SortBtn:hover {
+  color: white;
+  background-color: black;
+}
+.MainTitle {
+  color: white;
+  font-family: "Indie Flower", cursive;
+}
+.AlbumsCards {
+  float: left;
+  width: 23%;
+  padding: 0 10px;
+}
+.CardImgTop {
+  width: 350px;
+  height: 280px;
+}
+.CardTitle {
+  font-family: "Indie Flower", cursive;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.CardDate {
+  font-size: 5px;
+}
+.AlbumRank {
+  font-size: 10px;
+}
+.AlbumPlaylist {
+  list-style: none;
+  text-align: left;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .AlbumsCards {
+    width: 45%;
+  }
+  .CardImgTop {
+    width: 350px;
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .AlbumsCards {
+    width: 80%;
+    float: right;
+  }
+  .CardImgTop {
+    width: 350px;
+    height: 280px;
+  }
+  .SearchAlbums {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .SearchAlbums {
+    width: 300px;
+    margin-left: 30px;
+  }
+}

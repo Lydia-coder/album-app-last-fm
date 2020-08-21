@@ -2,37 +2,123 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section {
+  position: relative;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bg2::after {
+  background-image: url("https://atlantablackstar.com/wp-content/uploads/2020/06/Ciara.jpg");
+  background-size: cover;
+}
+
+.static {
+  background: white;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 360px;
+  margin-bottom: 20px;
+  perspective: 600px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 350px;
+  height: 360px;
+
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 350px;
+  height: 355px;
+
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+
+  border: solid black 6px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  border: solid black 6px;
+  z-index: 10;
+  font-family: "Indie Flower", cursive;
+}
+
+@media only screen and (max-width: 800px) {
+  .bg2 {
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 600px) {
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 330px;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .flip-card {
+    background-color: transparent;
+    width: 450px;
+    height: 440px;
+  }
+}
+@media only screen and (max-width: 400px) {
 }

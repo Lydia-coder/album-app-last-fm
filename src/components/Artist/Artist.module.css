@@ -1,0 +1,77 @@
+.ArtistTitle {
+  font-family: "Monoton", cursive;
+  font-size: 200px;
+  font-weight: 100;
+}
+.Arrow {
+  color: "white";
+  margin-top: 300px;
+  font-size: 40px;
+  animation: pulse 2s infinite;
+}
+.ArtistContent {
+  color: black;
+  font-family: "Indie Flower", cursive;
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.AlbumsBtn {
+  background-color: black;
+  color: white;
+  padding: 15px 50px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ArtistTitle {
+    font-size: 200px;
+    font-weight: 100;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ArtistTitle {
+    font-size: 160px;
+    font-weight: 100;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ArtistTitle {
+    font-size: 140px;
+    font-weight: 100;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ArtistTitle {
+    font-size: 120px;
+    font-weight: 100;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .ArtistTitle {
+    font-size: 100px;
+    font-weight: 100;
+  }
+  .ArtistContent {
+    font-size: 20px;
+  }
+}

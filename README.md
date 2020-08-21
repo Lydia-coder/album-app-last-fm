@@ -1,3 +1,36 @@
+## Ciara TopAlbums
+
+This is an assigment by LabelA. The requirements were that I had to make an App of my favourit artist.
+By using The Last FM api.
+
+## when you open the app you see:
+
+- the name of the artist
+- a little bio of the artist
+- a button that links to album page.
+
+## album page
+
+- list of albums with image, title, publishing date
+- when you hover the card it flips to show a list of songs
+- a search bar where you can search the album by name
+- sort button to sort alphabeticcaly
+
+## stack used for this project
+
+- React
+- React-router-dom
+- React Hooks ( only learned this last week, this is my second time using it in a project )
+- CSS modules
+
+## goals for this project
+
+- to show my potential
+- to learn more about hooks
+- to write clean code
+- to finish it in the time frame that was given
+- to add an other project to my portfolio.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
